@@ -1,0 +1,46 @@
+*{margin: 0; padding: 0;}
+a{ text-decoration: none; color:black}
+button{
+    border:0; background-color: transparent;
+}
+.wrap{
+    min-width:310px;
+    max-width:800px;
+    width: calc(100vw - 30px);
+    margin: 0 auto;
+    height:calc(100vh - 100px);
+    max-height:600px;
+}
+.target{
+    height:calc(100% - 30px);
+    border:2px solid #333;
+}
+.bg0{
+   background-color: rgba(207, 33, 33, 0.822); 
+}
+.bg1{
+    background-color: rgb(39, 196, 25); 
+ }
+.bg2{
+    background-color: rgb(210, 234, 33); 
+ }
+.btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.btns button{
+    border-radius: 2rem;
+    width:2rem; height:2rem;
+    margin:0 0.5rem;
+    background-color: #ccc;
+    transition: 0.5s;
+}
+.btns button.on{
+    background-color: red;
+    width:3rem;
+}
+.btns button.on:after{
+    content: "OK";
+    color:white;
+}
